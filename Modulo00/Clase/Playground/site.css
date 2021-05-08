@@ -1,0 +1,44 @@
+* {
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: blue;
+}
+
+.container {
+    background-color: red;
+    color: white;
+}
+
+#simpletext {
+    font-size: 32px;
+    background-color: pink;
+}
+
+div {
+    /*width: 300px;*/
+    background-color: yellow;
+}
+
+div p {
+    background-color: blue;
+    color: white;
+}
+
+.box {
+    height: 100px;
+    border: solid 1px black;
+    background-color: pink;
+    color: white;
+    text-align: center;
+}
+
+.box-item {
+    background-color: green;
+    color: white;
+}
