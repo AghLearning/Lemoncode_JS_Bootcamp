@@ -289,18 +289,86 @@ Añadimos un botón, que permita recuperar los valores y llevarlos a consola:
 
 *./index.html*
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Datos de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="" id="avatar" alt="Avatar" class="avatar" />
+        </div>
+        <div class="data">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name" />
+            
+            <label for="lastName"><b>Last Name</b></label>
+            <input type="text" id="lastName" name="lastName" />
+        </div>
 
+        <button type="button" onclick="console.log(document.getElementById('lastName').value)">
+            Update
+        </button>
+    </div>
+
+    <script src="js/demo.js"></script>
+</body>
+</html>
 ```
 
 *./css/sites.css*
 ```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 32px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.img {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.data {
+    padding: 16px;
+}
+
+button {
+    background-color: #c7b93e;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 ```
 
-*./js/demo.js*
-```js
-
-```
+Al no poder usar funciones, el javascript lo insrtamos en línea dentro del HTML y no se requiren cambios en el fichero *.js.
 
 ## 5.- Depurar con VS Code y Chrome
 
@@ -336,5 +404,5 @@ y si accedemos a la configuración podemos modificarla para que se vincule con e
 Para que el depurador funcione, se debe primero lanzar *lite-server* en la carpeta contenedora de la web que se desea depurar.
 
 
-[img1]: https://github.com/AghLearning/Lemoncode_JS_Entregas/blob/main/Modulo_1/docs/Modulo01-Ejercicio04.jpeg "Pantallazo"
-[img2]: https://github.com/AghLearning/Lemoncode_JS_Entregas/blob/main/Modulo_1/docs/JS Debuguer.png "Pantallazo"
+[img1]: https://github.com/AghLearning/Lemoncode_JS_Bootcamp/blob/main/Modulo_1/docs/Modulo01-Ejercicio04.jpeg "Pantallazo"
+[img2]: https://github.com/AghLearning/Lemoncode_JS_Bootcamp/blob/main/Modulo_1/docs/JS Debuguer.png "Pantallazo"
