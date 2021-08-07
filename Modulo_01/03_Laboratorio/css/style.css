@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 10px;
+    width: 250px;
+    position: absolute;
+}
+
+.content{
+    margin: 0 auto;  
+}
+
+label{
+    width: 100%;
+    font-weight: bold;
+}
+
+input{
+    border: grey solid 1px;
+}
