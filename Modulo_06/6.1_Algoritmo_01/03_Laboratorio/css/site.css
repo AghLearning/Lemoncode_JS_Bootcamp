@@ -6,3 +6,39 @@
 body {
     margin: 1rem  3rem;
 }
+
+.carrito-content {
+    border: solid gray 1px;
+    border-radius: 5px;
+    width: 40vw;
+    margin: 10vh auto;
+    padding: 2vw;
+}
+
+.carrito-content h2 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.btn {
+    margin: 2rem 0;
+    padding: .2rem 0;
+    width: 95%;
+    background-color: rgb(5, 117, 52);
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+#product-list-container li {
+    margin: .3rem 0;
+}
+.product-input {
+    width: 5rem;
+}
+
+.product-name{
+    display: inline-block;
+    width: 50%;
+    padding: 0 1rem;
+}
